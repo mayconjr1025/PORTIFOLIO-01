@@ -1,0 +1,254 @@
+/* Estilização da imagem */
+img {
+    width: 18%;
+    float: right;
+    margin-top: -7%;
+}
+
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    color: #333;
+    background-image: url("imagem/nuvem-seguranca-cloud-protecao-freepik.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #00336d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo do menu de navegação */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #00336d;
+    padding: 10px;
+    z-index: 1000;
+    justify-content: center;
+}
+
+/* Links de navegação */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    justify-content: center;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav a:hover {
+    color: #0073e6;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+nav a.active {
+    border-bottom: 2px solid #ffd700;
+}
+
+/* Estilo geral dos containers */
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Estilo das seções */
+.section {
+    margin: 20px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagens dentro das seções */
+.section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+}
+
+/* Estilo responsivo para dispositivos móveis */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+}
+
+/* Estilo do botão de voltar ao topo */
+#topBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: none;
+    font-size: 16px;
+}
+
+#topBtn:hover {
+    background-color: #005bb5;
+}
+
+/* Estilo dos formulários */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Estilo dos botões */
+button {
+    background-color: #00336d;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Estilo dos projetos */
+.project {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.project:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.02);
+}
+
+.project a {
+    text-decoration: none;
+    color: #00336d;
+    font-weight: bold;
+}
+
+.project a:hover {
+    color: #0056b3;
+}
+
+/* Estilo das habilidades */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.skills li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skills img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Estilo das redes sociais */
+#redes-sociais {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#redes-sociais h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links a {
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.social-links a:hover img {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Media query para garantir responsividade das redes sociais */
+@media (max-width: 600px) {
+    .social-links {
+        flex-direction: column;
+    }
+
+    .social-links a {
+        margin-bottom: 10px;
+    }
+}
+
+
